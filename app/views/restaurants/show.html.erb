@@ -5,6 +5,8 @@
   <%= @restaurant.name %>
 </p>
 
+<%= link_to 'Check the reviews', restaurant_reviews_path(@restaurant) %>
+
 <p>
   <strong>Address:</strong>
   <%= @restaurant.address %>
@@ -20,5 +22,4 @@
   <%= @restaurant.category %>
 </p>
 
-<%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
 <%= link_to 'Back', restaurants_path %>
